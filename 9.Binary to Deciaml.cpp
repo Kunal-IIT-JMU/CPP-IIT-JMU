@@ -25,3 +25,4 @@ int main(){
 
     return 0;
 }
+//similarly other funtions of other transformations can be created.
