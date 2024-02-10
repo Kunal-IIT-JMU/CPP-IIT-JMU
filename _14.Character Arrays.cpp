@@ -1,28 +1,25 @@
-//Kunal Sharma IIT JAMMU
 #include <bits/stdc++.h>
-
 using namespace std;
 
-//function for palindrome check
-bool palindrome_check(char array[],int n){
-    for(int i=0; i<n; i++){
-        if(array[i] != array[n-1-i]){
+// Function for palindrome check
+bool palindrome_check(char array[], int n) {
+    for(int i = 0; i < n / 2; i++) {
+        if(array[i] != array[n - 1 - i]) {
             return false;
         }
     }
     return true;
 }
 
-int main(){
+int main() {
     int n;
     cin >> n;
 
-    char arr[n+1];
+    // Allocate memory for the character array
+    char arr[n + 1]; // Additional space for null terminator
     cin >> arr;
 
-    cout << palindrome_check(arr,n+1);
-    //print zero then not a palindrome
-    //print one then is a palindrome
+    cout << (palindrome_check(arr, n) ? "1" : "0") << endl; // Print "1" for palindrome, "0" for not palindrome
 
     return 0;
 }
