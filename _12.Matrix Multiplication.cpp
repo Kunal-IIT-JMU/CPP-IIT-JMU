@@ -45,8 +45,9 @@ int main(){
     //printing the solution
     for(int i=0; i<n2; i++){
         for(int j=0; j<n3; j++){
-            cout << ans_matrix[i][j];
+            cout << ans_matrix[i][j] << " " ;
         }
+        cout << endl;
     }
 
     return 0;
