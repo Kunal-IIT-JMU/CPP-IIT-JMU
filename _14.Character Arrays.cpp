@@ -4,9 +4,9 @@
 using namespace std;
 
 //function for palindrome check
-bool palindrome_check(char array[],n){
+bool palindrome_check(char array[],int n){
     for(int i=0; i<n; i++){
-        if(array[i] != arr[n-1-i]){
+        if(array[i] != array[n-1-i]){
             return false;
         }
     }
