@@ -10,8 +10,8 @@ void linear_search(int arr[], int n, int key){
             cout << "YES Found It.";
             return;
         }
-        cout << "NO Not found.";
     }
+    cout << "NO Not found.";
     return;
 }
 
