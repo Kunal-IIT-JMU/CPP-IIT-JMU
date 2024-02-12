@@ -27,6 +27,15 @@ int main(){
     string s = "Kunal Sharma";
     cout << uppercase(s) << endl;
     cout << lowercase(s) << endl;
-    
+
+    //Another method of Uppercase and lowercase
+    string x = "kunal";
+
+    transform(x.begin(), x.end() ,x.begin(), ::toupper);        //return UPPERCASE VERSION
+    cout << x << endl;
+
+    transform(x.begin(), x.end() ,x.begin(), ::tolower);        //return LOWERCASE VERSION
+    cout << x << endl;
+
     return 0;
 }
