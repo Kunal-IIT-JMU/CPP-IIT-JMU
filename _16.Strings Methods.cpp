@@ -1,3 +1,4 @@
+//Kunal Sharma IIT JAMMU
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -54,5 +55,6 @@ int main(){
     sort(sor.begin(),sor.end());        //sorting is done in strings in this method
     cout << sor << endl;
 
+    cout << 'a'-'A' << endl;        //subtracting the 2 characters will give the subtraction of their ascii code
     return 0;
 }
