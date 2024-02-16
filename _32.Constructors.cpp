@@ -10,8 +10,12 @@ class student{
     int age;
     string gender;
 
+    student(){
+        //Default constructer
+    }
+
     student(string s, int a, string g){     //using a constructer to set the value for the variables
-        name = s;
+        name = s;                           //using a parameterised constructor
         age = a;
         gender = g;
     }
