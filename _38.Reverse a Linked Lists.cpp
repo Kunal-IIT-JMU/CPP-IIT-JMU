@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//Code to Reverse a Linked list
+//Code to Create a node for the linked list
 class node
 {
     public:
@@ -17,6 +17,7 @@ class node
     }
 };
 
+//code to reverse the given Linked List
 node* reverse(node* &head){
     node* prevptr = NULL;
     node* currptr = head;
@@ -31,6 +32,7 @@ node* reverse(node* &head){
     return prevptr;
 }
 
+//Insert function to insert the elements in the linked lists
 void insert(node* &head, int val){
     node* n = new node(val);            
 
@@ -46,6 +48,7 @@ void insert(node* &head, int val){
     return ;
 }
 
+//Code to display the given Linked lists 
 void display(node* head){
     node* temp = head;
     while (temp != NULL){
@@ -64,7 +67,7 @@ int main(){
     insert(head,3);
     insert(head,4);
     display(head);
-    node* newhead = reverse(head);
+    node* newhead = reverse(head);            //creating new Linked List to store the reversed Linked List
     display(newhead);
     return 0;
 }
