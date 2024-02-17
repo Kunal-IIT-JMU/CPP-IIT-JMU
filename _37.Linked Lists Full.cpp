@@ -72,18 +72,18 @@ void Delete(node* &head, int val){
 //Code for Deletion at head
 void deleteathead(node* &head){
 
-    if(head == NULL){
+    if(head == NULL){           //end the function when reaches the end of the Linked List
         return;
     }
 
-    if(head -> next == NULL){
+    if(head -> next == NULL){       //if head is the next element of the linked list
         deleteathead(head);
         return;
     }
     node* todelete = head;
-    head = head -> next;
+    head = head -> next;        //iterating through the list
 
-    delete todelete;
+    delete todelete;            //deleting for rest of the cases
 }
 
 int main(){
