@@ -78,7 +78,7 @@ int main(){
     insert(head ,4);    //entering fourth element in the linked lists
     display(head);      //printing the linked list
     Delete(head ,2);    //Deleting the node in the linked lists
-    display(head);
+    display(head);      //Displaying the linked lists after the deletion operation
     cout << search(head,2) << endl;     //searching 2 in the linked list will give 1 if present else 0
 
     return 0;
