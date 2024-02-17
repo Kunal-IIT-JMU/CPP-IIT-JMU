@@ -69,6 +69,15 @@ void Delete(node* &head, int val){
     delete todelete;                        //deleting the given node
 }
 
+//Code for Deletion at head
+void deleteathead(node* &head){
+
+    node* todelete = head;
+    head = head -> next;
+
+    delete todelete;
+}
+
 int main(){
 
     node * head = NULL;
@@ -79,6 +88,8 @@ int main(){
     display(head);      //printing the linked list
     Delete(head ,2);    //Deleting the node in the linked lists
     display(head);      //Displaying the linked lists after the deletion operation
+    deleteathead(head); //deletio at head 
+    display(head);
     cout << search(head,2) << endl;     //searching 2 in the linked list will give 1 if present else 0
 
     return 0;
