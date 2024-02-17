@@ -71,6 +71,10 @@ void Delete(node* &head, int val){
 
 //Code for Deletion at head
 void deleteathead(node* &head){
+    
+    if(head == NULL){
+        return;
+    }
 
     node* todelete = head;
     head = head -> next;
